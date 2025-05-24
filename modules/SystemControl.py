@@ -24,7 +24,7 @@ def control_pc(command):
     elif "kholo calculator" in command:
         os.system("calc")
         return "kholdiya Calculator..."
-    elif "kholo command prompt" in command or "open cmd" in command:
+    elif "kholo command prompt" in command or "kholo cmd" in command:
         os.system("start cmd")
         return "kholdiya Command Prompt..."
     elif "kholo task manager" in command:

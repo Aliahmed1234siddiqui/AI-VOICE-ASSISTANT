@@ -1,7 +1,7 @@
 #  region Modules Calling
 from modules.WebBrowserFunction import  open_website
 from modules.MusicPlayer import play_music 
-from modules.ChatgptSerach import chat_with_ai
+from modules.ChatgptSerach import chat_with_gemini
 from modules.SystemControl import control_pc  
 from modules.WikiPediaSerach import search_wikipedia 
 from modules.WeatherNews import get_weather
@@ -83,7 +83,7 @@ def main():
 
         elif "chat" in command: 
             prompt = command.replace("chat", "").strip()
-            result = chat_with_ai(prompt)
+            result = chat_with_gemini(prompt)
 
             # os wala cammand handle kar raha hn
 
